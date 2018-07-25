@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 -Otime --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\BSP\MotorControl -I..\BSP\MPU6050 -I..\BSP\OLED -I..\BSP\PID
+-I E:\workspace\BalanceCar\CubeMxConfig\code2\MDK-ARM\RTE
+-I e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+-I e:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB
+-o code2\system_stm32f1xx.o --omf_browse code2\system_stm32f1xx.crf --depend code2\system_stm32f1xx.d --feedback "code2\code2.fed" "..//Src/system_stm32f1xx.c"
